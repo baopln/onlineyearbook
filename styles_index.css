@@ -1,0 +1,178 @@
+@font-face {
+    font-family:kanit;
+    src:url('fonts/Kanit/Kanit-Bold.ttf') format('truetype'),
+    url('fonts/Kanit/Kanit-Bold.eot#iefix') format('embedded-opentype'),
+    url('fonts/Kanit/Kanit-Bold.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+}
+
+.intro { 
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.5)
+      ), url("backgroud/bg1.jpg");
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    text-align: center;
+    color: white;
+    font-family: kanit;
+    padding-top: 4rem;
+    padding-bottom: 20rem;
+}
+
+h2 {font-size: 54px;}
+h3 {font-size: 40px;}
+p {font-size: 24px;}
+
+a {
+    display: table-cell;
+    width: 20%;
+}
+    
+.col-wrap {
+    display: table; 
+    width: 100%;
+    background: 
+    linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.5)
+      );
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    color: rgba(0, 0, 0, 0);
+    font-family: kanit;
+}
+
+.col1 {
+    display: table-cell;
+    padding: 1rem;
+    width: 20%;
+    text-align: center;
+    background: url("backgroud/bg10.png"), url("backgroud/bg2.jpg");
+    background-size: 100%;
+    background-position: center center;
+}
+
+.col1:hover {
+    background: url("backgroud/bg10.png"),
+    linear-gradient(to bottom,rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)), url("backgroud/bg2.jpg");
+    background-size: 100% ;
+    color:white;
+    text-decoration: solid;
+    text-decoration-color: white ;
+    background-position: center center;
+}
+
+.col2 {
+    display: table-cell;
+    padding: 1rem;
+    width: 20%;
+    text-align: center;
+    background: url("backgroud/bg10.png") center, url("backgroud/bg3.jpg") center 8%;
+    background-size: 100% ;
+}
+
+.col2:hover {
+    background: url("backgroud/bg10.png") center,
+    linear-gradient(to bottom,rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)), url("backgroud/bg3.jpg") center 8%;
+    background-size: 100% ;
+    color:white;
+}
+
+.col3 {
+    display: table-cell;
+    padding: 1rem;
+    width: 20%;
+    text-align: center;
+    background: url("backgroud/bg10.png") center, url("backgroud/bg4.jpg") bottom;
+    background-size: 100% ;
+}
+
+.col3:hover {
+    background: url("backgroud/bg10.png") center,
+    linear-gradient(to bottom,rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)), url("backgroud/bg4.jpg") bottom;
+    background-size: 100% ;
+    color:white;
+}
+
+.col4 {
+    display: table-cell;
+    padding: 1rem;
+    width: 20%;
+    text-align: center;
+    background: url("backgroud/bg10.png"), url("backgroud/bg9.jpg");
+    background-size: 100% ;
+    background-position: center center;
+}
+
+.col4:hover {
+    background: url("backgroud/bg10.png"),
+    linear-gradient(to bottom,rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)), url("backgroud/bg9.jpg");
+    background-size: 100% ;
+    color:white;
+    background-position: center center;
+}
+
+.col5 {
+    display: table-cell;
+    padding: 1rem;
+    width: 20%;
+    text-align: center;
+    background: url("backgroud/bg10.png") center, url("backgroud/bg8.jpg") top;
+    background-size: 100% ;
+}
+
+.col5:hover {
+    background: url("backgroud/bg10.png") center,
+    linear-gradient(to bottom,rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)), url("backgroud/bg8.jpg") top;
+    background-size: 100% ;
+    color:white;
+}
+
+#content {
+    width: 100%;
+    background: url("backgroud/bg11.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgba(0, 0, 0, 0);
+    font-family: kanit;
+    text-align: center;
+}
+
+a:link {
+    color:rgba(255, 255, 255, 0);
+    text-decoration: none;
+}
+a:visited {
+    color:rgba(255, 255, 255, 0);
+    text-decoration: none;
+}
+a:active {
+    color:rgba(255, 255, 255, 0);
+    text-decoration: none;
+}
+a:hover {
+    color:white;
+    text-decoration: none;
+}
+
+#content_image {
+    width: 550px;
+    margin: 2rem 2rem;
+    border: 10px solid wheat;
+    box-shadow: 15px 15px 15px rgba(0, 24, 7, 0.74);
+}
+
+#content_text {
+    padding: 2rem;
+    width: 600px;
+    color: white;
+    font-size: 35px;
+    margin: 0 auto;
+}
