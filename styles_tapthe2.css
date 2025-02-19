@@ -1,0 +1,266 @@
+@font-face {
+    font-family:gastie;
+    src:url('fonts/MJ-Gastie-Regular.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:kanit;
+    src:url('fonts/Kanit/Kanit-Light.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:typo;
+    src:url('fonts/typography.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+html, body {
+    background-color: #e1dcce;
+    color: #464138;
+    margin: 0;
+    padding: 0;
+}
+
+.copy, .section2, .section3 {
+    position: relative;
+    background-color: #d4cfc0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35vh;
+    font-family: "gastie";
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 90px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10%;
+    z-index: 1;
+
+}
+.hero-header1 {
+    left: 35%; 
+    top: 35%;
+    animation: scaleout2 ease-in-out forwards;
+    animation-timeline: view(auto 50%);
+}
+.hero-header2 {
+    right: 35%;
+    top: 50%;
+    animation: scaleout3 ease-in-out forwards;
+    animation-timeline: view(auto 35%);
+}
+.hero-header3 {
+    left: 35%; 
+    top: 65%;
+    animation: scaleout2 ease-in-out forwards;
+    animation-timeline: view(auto 20%);
+}
+.image {
+    position: absolute;
+    top: 10%;
+    width: 350px;
+    object-fit: cover;
+    animation: scaleout ease-in-out forwards;
+    animation-timeline: view(auto 90%);
+    z-index: 2;
+}
+
+@keyframes scaleout {
+    to {
+        transform: translateY(500px) scale(1.5);
+    }
+}
+
+@keyframes scaleout2 {
+    to {
+        transform: translateY(250px) translateX(-450px);
+    }
+}
+
+@keyframes scaleout3 {
+    to {
+        transform: translateY(250px) translateX(450px);
+    }
+}
+
+.custom-shape-divider-top-1739554315 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+    transform: rotate(180deg);
+    animation: up ease-in-out forwards;
+    animation-timeline: view(50% 30%);
+    box-shadow: 15px -15px 15px rgba(0, 0, 0, 0.377)  ;
+}
+
+@keyframes up {
+    to {
+        transform: rotate(180deg) ;
+    }
+}
+
+.custom-shape-divider-top-1739554315 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 123px;
+}
+
+.custom-shape-divider-top-1739554315 .shape-fill {
+    fill: #d4cfc0;
+}
+
+.coverbg {
+    height: 25vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #d4cfc0;
+    z-index: 2;
+}
+
+.divider {
+    position: absolute;
+    background-color: #d4cfc0;
+    height: 25vh;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    animation: up1 ease-in-out forwards;
+    animation-timeline: view(50% 10%);
+}
+
+@keyframes up1 {
+    to {
+        transform: translateY(-10vh) ;
+    }
+}
+
+.section1 {
+    column-count: 6;
+    z-index: 3;
+    margin: 1em;
+}
+
+.imagecontent {
+    width: 100%;
+    margin-bottom: 1em;
+    transition: .3s ease-in;
+    animation: autoshow both;
+    animation-timeline: view(70% 5%);
+} 
+
+@keyframes autoshow {
+    from{
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.decor1, .decor2, .decor3, .decor4, .decor5, .decor6, .decor7, .decor8 {
+    position: absolute; z-index: 5; width: 240px;
+}
+
+.decor1 {top: 7%; left: 41%; animation: rotating ease-in both; animation-timeline: view();}
+.decor2 {top: 17%; left: 8%; transform: rotate(90deg) translateX(300px); animation: up2 ease-in both; animation-timeline: view();}
+.decor3 {top: 28%; left: 75%; transform: scale(0.5); animation: growspin ease-in both; animation-timeline: view();}
+.decor4 {top: 38%; left: 24%; transform: scale(0.5); animation: growspin both reverse; animation-timeline: view();}
+.decor5 {top: 44%; left: 60%; transform: scale(0.5); animation: growspin both; animation-timeline: view();}
+.decor6 {top: 60%; left: 41%; transform: scale(0.3) translateY(400px); animation: movespin both; animation-timeline: view();}
+.decor7 {top: 67%; left: 24%; transform: scale(0.3) translateY(400px); animation: movespin both reverse; animation-timeline: view();}
+.decor8 {top: 79%; left: 33%; transform: scale(0.5); animation: moveright both; animation-timeline: view();}
+
+@keyframes rotating {to {transform: rotate(360deg);}}
+@keyframes up2 {100% {transform: translateX(0) rotate(90deg);}}
+@keyframes growspin {50% {transform: rotate(180deg) scale(0.7);} 100% {transform: rotate(360deg) scale(0.5);}}
+@keyframes movespin {100% {transform: translateY(0px) rotate(-179deg) scale(0.3);}}
+@keyframes moveright {100% {transform: translateX(400px) scale(0.5);}}
+
+.section2, .section3 {
+    height: 100vh;
+}
+
+.images2 {
+    position: absolute; 
+}
+
+.heading1 {
+    font-size: 180px;
+    font-weight: 400;
+    line-height: 90px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    font-family: "gastie";
+}
+
+.heading2 {
+    font-weight: 40;
+    line-height: 90px;
+    position: absolute;
+    z-index: 10;
+}
+
+.hd21 {top: 40%; left: 10%; font-family: "kanit"; font-size: 40px;}
+.hd22 {top: 65%; left: 62%; font-family: "typo"; font-size: 80px;}
+.hd11 {left: 10%; --ispeed: 1; animation: up4 ease-in both; animation-timeline: view();}
+.hd12 {left: 18.5%; --ispeed: 1.5; animation: up4 ease-in both; animation-timeline: view();}
+.hd13 {left: 35.5%; --ispeed: 0.8; animation: up4 ease-in both; animation-timeline: view();}
+.hd14 {left: 44%; --ispeed: 2.5; animation: up4 ease-in both; animation-timeline: view();}
+.hd15 {left: 57%; --ispeed: 2; animation: up4 ease-in both; animation-timeline: view();}
+.hd16 {left: 72%; --ispeed: 0.5; animation: up4 ease-in both; animation-timeline: view();}
+.hd17 {left: 80.5%; --ispeed: 1.8; animation: up4 ease-in both; animation-timeline: view();}
+
+.i1 {top: 15%; left: 5%; z-index: 10; width: 280px; --ispeed: 0.8; animation: up3 ease-in both; animation-timeline: view();}
+.i2 {top: 40%; left: 15%; z-index: 9; width: 300px; --ispeed: 3; animation: up3 ease-in both; animation-timeline: view();}
+.i3 {top: 80%; left: 5%; z-index: 10; width: 260px; --ispeed: 0.5; animation: up3 ease-in both; animation-timeline: view();}
+.i4 {top: 10%; left: 80%; z-index: 9; width: 230px; --ispeed: 1; animation: up3 ease-in both ; animation-timeline: view();}
+.i5 {top: 80%; left: 48%; z-index: 11; width: 200px; --ispeed: 1.5; animation: up3 ease-in both; animation-timeline: view();}
+
+@keyframes up3 {0% {transform: translateY(calc(var(--ispeed) * 100px));} 100% {transform: translateY(calc(var(--ispeed) * -200px));}}
+@keyframes up4 {0%, 30% {transform: translateY(0);} 100% {transform: translateY(calc(var(--ispeed) * -200px));}}
+
+video {
+    width: auto;
+    height: 80%;
+    z-index: 12;
+    border-radius: 50px;
+}
+
+.section3 {
+    padding-top: 25vh;
+}
+
+p {
+    font-size: 4em;
+    line-height: 1.2em;
+}

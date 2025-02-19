@@ -46,6 +46,7 @@ a {
     background-repeat: no-repeat;
     color: rgba(0, 0, 0, 0);
     font-family: kanit;
+    z-index: 1;
 }
 
 .col1 {
@@ -143,6 +144,7 @@ a {
     color: rgba(0, 0, 0, 0);
     font-family: kanit;
     text-align: center;
+    z-index: 0;
 }
 
 a:link {
@@ -167,6 +169,8 @@ a:hover {
     margin: 2rem 2rem;
     border: 10px solid wheat;
     box-shadow: 15px 15px 15px rgba(0, 24, 7, 0.74);
+    animation: autoshow both;
+    animation-timeline: view(70% 5%);
 }
 
 #content_text {
@@ -175,4 +179,17 @@ a:hover {
     color: white;
     font-size: 35px;
     margin: 0 auto;
+    animation: autoshow both;
+    animation-timeline: view(70% 5%);
+}
+
+@keyframes autoshow {
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
